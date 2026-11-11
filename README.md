@@ -59,9 +59,9 @@ O desenvolvimento segue a abordagem **Ágil**, utilizando o **Scrum** como refer
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **Linguagem / Framework Backend:** *A definir*
-* **Frontend:** *A definir*
-* **Banco de Dados:** *A definir*
+* **Linguagem / Framework Backend:** *Python*
+* **Frontend:** *React/Js*
+* **Banco de Dados:** *SQLite*
 * **Versionamento:** Git / GitHub
 
 ---
