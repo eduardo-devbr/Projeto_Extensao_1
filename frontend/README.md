@@ -1,3 +1,7 @@
+Para testar o projeto, adicione ao front os módulos do node.js e rode o comando 'npm i' para adicionar as depedências.
+Além disso instale também com o gerenciador do python, a biblioteca flask e flash-cors!
+
+**Instruções do node abaixo**
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

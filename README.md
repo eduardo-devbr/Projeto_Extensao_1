@@ -69,10 +69,14 @@ O desenvolvimento segue a abordagem **Ágil**, utilizando o **Scrum** como refer
 ## 📂 Estrutura do Repositório
 
 ```text
-.
-├── docs/             # Documentações, levantamento de requisitos e diagramas
-├── src/              # Código-fonte da aplicação
-├── tests/            # Testes automatizados
+
+├── latex/             # Documentações, levantamento de requisitos e diagramas
+├── frontend/              # Código-fonte da aplicação
+├──── src/
+├────── pages/
+├────── components/
+├────── assets/
+├── backend_db/            # Testes automatizados
 ├── .gitignore        # Arquivos ignorados pelo Git
 └── README.md         # Documentação principal do repositório
 
