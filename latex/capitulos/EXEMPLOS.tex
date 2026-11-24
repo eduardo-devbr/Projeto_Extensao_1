@@ -1,0 +1,170 @@
+% ----------------------------------------------------------
+% Fundamentação Teórica
+% ----------------------------------------------------------
+\chapter{Fundamentação Teórica} \label{cha:fundamentacao}
+
+Título de um capítulo é chamado seção primária. Deve ser em negrito e letras maiúsculas e sempre no topo de uma nova página. 
+
+\cite{de2011associaccao}
+
+
+\section{Título da Seção SECUNDÁRIA}
+As políticas públicas são princípios norteadores, diretrizes para ações do 
+poder público para com a sociedade. Faz-se necessário para tanto o seu 
+entendimento, para Teixeira (2002, p. 2, aspas do autor),
+
+\begin{citacao}
+As citações diretas, no texto, com mais de três linhas, devem ser
+destacadas com recuo de 4 cm da margem esquerda, com letra menor que a do texto
+utilizado e sem as aspas. No caso de documentos datilografados, deve-se
+observar apenas o recuo \cite[5.3]{NBR10520:2002}.
+\end{citacao}
+
+\subsection{Título da seção TERCIÁRIA}
+
+Texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto. 
+
+\subsubsection{Título da seção QUARTENÁRIA}
+
+As ilustrações (fotografias, gráficos, mapas, plantas, quadros) e tabelas 
+devem ser citados e inseridos o mais próximo possível do trecho a que se referem. 
+
+Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto, conforme o Gráfico 1.
+
+\begin{figure}[H]
+\renewcommand{\figurename}{Gráfico}	
+\caption*{ \label{graf1}Gráfico 1 – Atendimento na educação básica por dependência 
+administrativa município de Avaré – 2014}
+	\begin{center}
+	    \includegraphics[scale=1.0]{imagens/grafs_1.png}
+	\end{center}
+	\legend{Fonte: Secretaria Municipal de Educação de Avaré (2014). }
+
+\end{figure}
+
+Texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto. 
+
+
+\begin{figure}[H]
+\renewcommand{\figurename}{Gráfico}	
+\caption*{ \label{graf2}Gráfico 2 – Distribuição do número de matrículas por etapas da 
+educação básica município de Avaré – 2014}
+	\begin{center}
+	    \includegraphics[scale=1.0]{imagens/grafs_1.png}
+	\end{center}
+	\legend{Fonte: Secretaria Municipal de Educação de Avaré (2014). }
+
+\end{figure}
+
+\renewcommand{\figurename}{Figura}	
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize}{\theparagraph}{1em}\emph{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\paragraph{Título da seção quinária}
+
+Texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto 
+texto texto texto. 
+
+\begin{figure}[H]
+	\caption{\label{fig_arranjo}Arranjo produtivo local da banana orgânica.}
+	\begin{center}
+	    \includegraphics[scale=1.0]{imagens/fig_exemplo.png}
+	\end{center}
+	\legend{Fonte: \cite{limaarranjo}}
+\end{figure}
+
+
+% ---
+\section{Tabelas}
+% ---
+
+\index{tabelas}A \autoref{tab-nivinv} é um exemplo de tabela construída em
+\LaTeX.
+
+\begin{table}[htb]
+\ABNTEXfontereduzida
+\caption[Níveis de investigação]{Níveis de investigação.}
+\label{tab-nivinv}
+\begin{tabular}{p{2.6cm}|p{6.0cm}|p{2.25cm}|p{3.40cm}}
+  %\hline
+   \textbf{Nível de Investigação} & \textbf{Insumos}  & \textbf{Sistemas de Investigação}  & \textbf{Produtos}  \\
+    \hline
+    Meta-nível & Filosofia\index{filosofia} da Ciência  & Epistemologia &
+    Paradigma  \\
+    \hline
+    Nível do objeto & Paradigmas do metanível e evidências do nível inferior &
+    Ciência  & Teorias e modelos \\
+    \hline
+    Nível inferior & Modelos e métodos do nível do objeto e problemas do nível inferior & Prática & Solução de problemas  \\
+   % \hline
+\end{tabular}
+\legend{Fonte: \citeonline{van86}}
+\end{table}
+
+Já a \autoref{tabela-ibge} apresenta uma tabela criada conforme o padrão do
+\citeonline{ibge1993} requerido pelas normas da ABNT para documentos técnicos e
+acadêmicos.
+
+\begin{table}[htb]
+\IBGEtab{%
+  \caption{Um Exemplo de tabela alinhada que pode ser longa
+  ou curta, conforme padrão IBGE.}%
+  \label{tabela-ibge}
+}{%
+  \begin{tabular}{ccc}
+  \toprule
+   Nome & Nascimento & Documento \\
+  \midrule \midrule
+   Maria da Silva & 11/11/1111 & 111.111.111-11 \\
+  \midrule 
+   João Souza & 11/11/2111 & 211.111.111-11 \\
+  \midrule 
+   Laura Vicuña & 05/04/1891 & 3111.111.111-11 \\
+  \bottomrule
+\end{tabular}%
+}{%
+  \fonte{Produzido pelos autores.}%
+  \nota{Esta é uma nota, que diz que os dados são baseados na
+  regressão linear.}%
+  \nota[Anotações]{Uma anotação adicional, que pode ser seguida de várias
+  outras.}%
+  }
+  \end{table}
+
+
+  \emph{Minipages} são usadas para inserir textos ou outros elementos em quadros
+com tamanhos e posições controladas. Veja o exemplo da
+\autoref{fig_minipage_imagem1} e da \autoref{fig_minipage_grafico2}.
+
+\begin{figure}[htb]
+ \label{teste}
+ \centering
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \caption{Imagem 1 da minipage} \label{fig_minipage_imagem1}
+    \includegraphics[scale=0.2]{imagens/ifpi.pdf}
+    \legend{Fonte: Produzido pelos autores}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.4\textwidth}
+    \centering
+    \caption{Grafico 2 da minipage} \label{fig_minipage_grafico2}
+    \includegraphics[scale=0.2]{imagens/abntex2-modelo-img-grafico.pdf}
+    \legend{Fonte: \citeonline[p. 24]{araujo2012}}
+  \end{minipage}
+\end{figure}
